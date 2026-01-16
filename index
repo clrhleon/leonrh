@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa Corporativa</title>
+
+    <!-- ===== CSS EMBEBIDO ===== -->
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #333;
+            background-color: #f4f6f9;
+        }
+
+        header {
+            background-color: #0a2a43;
+            color: #ffffff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(10,42,67,0.8), rgba(10,42,67,0.8)),
+                        url("https://via.placeholder.com/1600x600") center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        section {
+            padding: 60px 40px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section h3 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #0a2a43;
+            font-size: 28px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 6px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .service-card h4 {
+            margin-bottom: 15px;
+            color: #0a2a43;
+        }
+
+        .about {
+            background-color: #ffffff;
+            border-radius: 6px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            padding: 40px;
+            line-height: 1.6;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #0a2a43;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+
+            nav a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>EMPRESA CORPORATIVA</h1>
+    <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Soluciones Profesionales para su Empresa</h2>
+    <p>
+        Brindamos servicios estratégicos enfocados en crecimiento, eficiencia y
+        transformación empresarial.
+    </p>
+</section>
+
+<section id="servicios">
+    <h3>Nuestros Servicios</h3>
+    <div class="services">
+        <div class="service-card">
+            <h4>Consultoría Empresarial</h4>
+            <p>Análisis y mejora de procesos para maximizar resultados.</p>
+        </div>
+        <div class="service-card">
+            <h4>Recursos Humanos</h4>
+            <p>Gestión de talento y desarrollo organizacional.</p>
+        </div>
+        <div class="service-card">
+            <h4>Tecnología</h4>
+            <p>Automatización y soluciones digitales.</p>
+        </div>
+    </div>
+</section>
+
+<section id="nosotros">
+    <h3>Sobre Nosotros</h3>
+    <div class="about">
+        <p>
+            Somos una empresa comprometida con la excelencia y el crecimiento
+            empresarial sostenible.
+        </p>
+    </div>
+</section>
+
+<section id="contacto" class="contact">
+    <h3>Contacto</h3>
+    <p>
+        📧 contacto@empresa.com <br>
+        📞 +52 477 000 0000
+    </p>
+</section>
+
+<footer>
+    © 2026 Empresa Corporativa | Todos los derechos reservados
+</footer>
+
+<!-- ===== JS EMBEBIDO ===== -->
+<script>
+    window.addEventListener("scroll", () => {
+        // Lógica futura
+        console.log("Scrolling...");
+    });
+</script>
+
+</body>
+</html>
